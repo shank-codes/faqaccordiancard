@@ -1,38 +1,177 @@
-.App {
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body > * {
+  font-family: 'Kumbh Sans', sans-serif;
+  color: hsl(238, 29%, 16%);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  box-sizing: border-box;
+  background-image: url('../public/images/bg-pattern-desktop.svg'), url('../public/images/illustration-woman-online-desktop.svg');
+  background-size: 70% , 50%;
+  background-repeat: no-repeat;
+  background-position: -380px , -70px;
+  background-origin: border-box;
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px;
+  border-radius: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.decor {
+  grid-row: 1;
+  grid-column: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.illustration-box {
+  position: relative;
+  left: -125px;
+  top: 40%;
+}
+
+#root {
+  grid-row: 1;
+  grid-column: 2;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 440px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+.Accordion {
+  height: inherit;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* hide scrollbar for IE and Edge */
+  scrollbar-width: none;  /* for Firefox */
+
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.Accordion::-webkit-scrollbar {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.accordion-item {
+  width: 400px;
+}
+
+.accordion-title:hover {
+  cursor: pointer;
+  color: hsl(14, 88%, 65%);
+}
+
+hr {
+  border-color: hsl(240, 6%, 50%);
+}
+
+h2 {
+  font-size: 18px;
+  display: inline-block;
+}
+
+.arrow-up {
+  float: right;
+  width: 0.8em;
+  height: auto;
+  transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  margin-top: 0.5em;
+}
+
+.arrow {
+  float: right;
+  position: relative;
+  margin-top: 0.5em;
+  width: 0.8em;
+  height: auto;
+
+}
+
+.faq {
+  margin-bottom: 50px;
+  width: 400px;
+  font-weight: 700;
+}
+
+.expanded {
+  font-weight: 700;
+}
+
+@media (max-width: 1199px) {
+  main {
+    box-sizing: border-box;
+    background-image: url('../public/images/bg-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: 50% -40px;
+    width: 340px;
+    height: 500px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    position: relative;
+    top: 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .decor {
+    grid-row: 1;
+    grid-column: 1;
   }
+
+  .illustration-box {
+    position: relative;
+    left: 0;
+    top: -200px;
+  }
+  
+  #root {
+    grid-row: 2;
+    grid-column: 1;
+    position: relative;
+    top: -180px;
+  }
+
+  #root > *, #root,  .Accordion > *{
+    max-width: 300px;
+  }
+
+  .Accordion {
+    max-height: 330px;
+  }
+
+  .faq {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .accordion-title > h2 {
+    font-size: 16px;
+  }
+
+  .accordion-body {
+    font-size: 12px;
+  }
+
+  footer {
+    bottom: -70px;
+  }
+
 }
