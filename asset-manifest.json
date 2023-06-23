@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/faqaccordiancard/static/css/main.84eed878.css",
+    "main.js": "/faqaccordiancard/static/js/main.5d0d0bb9.js",
+    "static/js/787.0169b765.chunk.js": "/faqaccordiancard/static/js/787.0169b765.chunk.js",
+    "static/media/illustration-woman-online-desktop.svg": "/faqaccordiancard/static/media/illustration-woman-online-desktop.843eb114c7213a596ee2.svg",
+    "index.html": "/faqaccordiancard/index.html",
+    "static/media/bg-pattern-desktop.svg": "/faqaccordiancard/static/media/bg-pattern-desktop.f51e07a2f52390c60484.svg",
+    "static/media/bg-pattern-mobile.svg": "/faqaccordiancard/static/media/bg-pattern-mobile.55aee9128a769eedabec.svg",
+    "main.84eed878.css.map": "/faqaccordiancard/static/css/main.84eed878.css.map",
+    "main.5d0d0bb9.js.map": "/faqaccordiancard/static/js/main.5d0d0bb9.js.map",
+    "787.0169b765.chunk.js.map": "/faqaccordiancard/static/js/787.0169b765.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84eed878.css",
+    "static/js/main.5d0d0bb9.js"
+  ]
+}
